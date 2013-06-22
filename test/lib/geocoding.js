@@ -53,6 +53,17 @@ describe('geocode', function () {
 				done();
 			});
 		});
+
+		it ('should return error if location is not supplied', function (done) {
+			var geocode = geocoding.initialize();
+
+			geocode.get(null, function (err, data) {
+				should.exist(err);
+				should.not.exist(data);
+
+				done();
+			});
+		});
 	});
 
 	describe('#get', function () {
