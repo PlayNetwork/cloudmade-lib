@@ -38,7 +38,9 @@ describe('geocode', function () {
 			geocode.options.secure.should.equals(false);
 			geocode.options.apikey.should.equals('testing');
 		});
+	});
 
+	describe('#execRequest', function () {
 		it ('should return HTTP error if one occurs', function (done) {
 			var
 				geocode = geocoding.initialize({
@@ -60,6 +62,52 @@ describe('geocode', function () {
 			geocode.get(null, function (err, data) {
 				should.exist(err);
 				should.not.exist(data);
+
+				done();
+			});
+		});
+
+		it ('should properly handle location as an object', function (done) {
+			var
+				geocode = geocoding.initialize({
+					apikey : apikey
+				}),
+				location = {
+					city : 'Redmond',
+					country : 'US',
+					house : '8727',
+					state : 'WA',
+					street : '148th Ave NE', // not supported by Cloudmade Geocoding API
+					zipcode : '98052'
+				};
+
+			geocode.get(location, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+
+				var queryItems = data.query.substring(7, data.query.length - 1).split(';');
+				queryItems.should.have.length(5);
+
+				done();
+			});
+		});
+
+		it ('should properly handle location as a POI', function (done) {
+			var
+				geocode = geocoding.initialize({
+					apikey : apikey
+				}),
+				location = {
+					poi : 'Statue of Liberty',
+					country : 'US'
+				};
+
+			geocode.get(location, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+
+				var queryItems = data.query.substring(7, data.query.length - 1).split(';');
+				queryItems.should.have.length(2);
 
 				done();
 			});
