@@ -1,16 +1,14 @@
-var geocoding = requireWithCoverage('geocoding');
+var
+	geocoding = requireWithCoverage('geocoding');
+
+	apikey = 'ab9312b78ae64ab791291edf676b2c9b';
 
 
 describe('geocode', function () {
 	'use strict';
 
-	after(function () {
-
-	});
-
-	before(function () {
-
-	});
+	// set timeout
+	this.timeout(5000);
 
 	describe('#initialize', function () {
 		it ('should have proper default settings when initialized without options', function () {
@@ -39,6 +37,23 @@ describe('geocode', function () {
 			should.exist(geocode.options);
 			geocode.options.secure.should.equals(false);
 			geocode.options.apikey.should.equals('testing');
+		});
+	});
+
+	describe('#get', function () {
+		it ('should return JSON payload', function (done) {
+			var
+				geocode = geocoding.initialize({
+					apikey : apikey
+				}),
+				location = '8727 148th Ave NE, Redmond, WA 98052';
+
+			geocode.get(location, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+
+				done();
+			});
 		});
 	});
 });

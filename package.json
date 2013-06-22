@@ -13,7 +13,8 @@
 	"scripts" : {
 		"pretest" : "jshint lib/*.js test/*.js ; rm -rf lib-cov ; jscoverage lib lib-cov",
 		"test" : "mocha --check-leaks -R spec -r ./test/common.js ./test/lib",
-		"posttest" : "rm -rf reports ; mkdir -p reports ; CLOUDMADE_LIB_COVERAGE=true mocha -R html-cov -r ./test/common.js ./test/lib > reports/coverage.html"
+		"posttest" : "CLOUDMADE_LIB_COVERAGE=true mocha -R mocha-lcov-reporter -r ./test/common.js ./test/lib | ./node_modules/coveralls/bin/coveralls.js",
+		"coverage" : "rm -rf reports ; mkdir -p reports ; CLOUDMADE_LIB_COVERAGE=true mocha -R html-cov -r ./test/common.js ./test/lib > reports/coverage.html"
 	},
 	"devDependencies" : {
 		"chai" : "*",

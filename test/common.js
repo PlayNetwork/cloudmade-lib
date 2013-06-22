@@ -1,4 +1,6 @@
 global.requireWithCoverage = function (libName) {
+	'use strict';
+
 	if (process.env.CLOUDMADE_LIB_COVERAGE) {
 		return require('../lib-cov/' + libName + '.js');
 	}
