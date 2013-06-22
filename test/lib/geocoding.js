@@ -210,4 +210,40 @@ describe('geocode', function () {
 			});
 		});
 	});
+
+	describe('#getPlist', function () {
+		it ('should return Plist payload', function (done) {
+			var
+				geocode = geocoding.initialize({
+					apikey : apikey
+				}),
+				location = '8727 148th Ave NE, Redmond, WA 98052';
+
+			geocode.getPlist(location, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+				data.data.should.be.a('string');
+
+				done();
+			});
+		});
+	});
+
+	describe('#getHtml', function () {
+		it ('should return HTML payload', function (done) {
+			var
+				geocode = geocoding.initialize({
+					apikey : apikey
+				}),
+				location = '8727 148th Ave NE, Redmond, WA 98052';
+
+			geocode.getHtml(location, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+				data.data.should.be.a('string');
+
+				done();
+			});
+		});
+	});
 });
