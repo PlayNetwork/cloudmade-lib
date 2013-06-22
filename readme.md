@@ -19,7 +19,7 @@ npm install cloudmade-lib
 
 ## Usage
 
-### Get JSON
+### JSON
 
 To retrieve results in JSON format, see the following example:
 
@@ -35,12 +35,78 @@ geocoding.get('8727 148th Ave NE, Redmond, WA 98052', function (err, data) {
 });
 ```
 
+### GeoJSON
+
+To retrieve results in GeoJSON format, see the following example:
+
+```Javascript
+var
+	cloudmade = require('cloudmade'),
+	geocoding = cloudmade.geocoding.initialize({
+		apikey : 'your_api_key_here'
+	});
+
+geocoding.getGeo('8727 148th Ave NE, Redmond, WA 98052', function (err, data) {
+	// work with results here...
+});
+```
+
+### Propert list
+
+To retrieve results in Plist format, see the following example:
+
+```Javascript
+var
+	cloudmade = require('cloudmade'),
+	geocoding = cloudmade.geocoding.initialize({
+		apikey : 'your_api_key_here'
+	});
+
+geocoding.getPlist('8727 148th Ave NE, Redmond, WA 98052', function (err, data) {
+	// work with results here...
+});
+```
+
+### HTML
+
+To retrieve results in HTML format, see the following example:
+
+```Javascript
+var
+	cloudmade = require('cloudmade'),
+	geocoding = cloudmade.geocoding.initialize({
+		apikey : 'your_api_key_here'
+	});
+
+geocoding.getHtml('8727 148th Ave NE, Redmond, WA 98052', function (err, data) {
+	// work with results here...
+});
+```
+
 ### Optional Parameters
 
-<http://developers.cloudmade.com/projects/show/geocoding-http-api#Parameters>
+Additional parameters, as outlined at <http://developers.cloudmade.com/projects/show/geocoding-http-api#Parameters>, can be supplied easily during the request.
 
+```Javascript
+var
+	cloudmade = require('cloudmade'),
+	geocoding = cloudmade.geocoding.initialize({
+		apikey : 'your_api_key_here'
+	}),
+	options = {
+		around : '47.6742,122.1203'
+		results : 100,
+		skip : 100
+	};
+
+geocoding.get(options, '8727 148th Ave NE, Redmond, WA 98052', function (err, data) {
+	// work with results here...
+});
+```
 
 ### Response Data
+
+The results returned from the cloudmade API are wrapped with the following fields:
 
 ```JSON
 {
@@ -52,6 +118,8 @@ geocoding.get('8727 148th Ave NE, Redmond, WA 98052', function (err, data) {
 	"secure" : false
 }
 ```
+
+For more information about cloudmade's response data: <http://developers.cloudmade.com/projects/show/geocoding-http-api#Geocoding-responses>
 
 ## License
 
