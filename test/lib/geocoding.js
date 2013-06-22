@@ -192,4 +192,22 @@ describe('geocode', function () {
 			});
 		});
 	});
+
+	describe('#getGeo', function () {
+		it ('should return JSON payload', function (done) {
+			var
+				geocode = geocoding.initialize({
+					apikey : apikey
+				}),
+				location = '8727 148th Ave NE, Redmond, WA 98052';
+
+			geocode.getGeo(location, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+				data.data.found.should.not.equals(0);
+
+				done();
+			});
+		});
+	});
 });
