@@ -1,6 +1,6 @@
 # Cloudmade Lib
 
-A node library for consuming Cloudmade APIs. Currently only
+A node library for consuming Cloudmade APIs. Currently only supports Geocoding.
 
 ## Features
 
