@@ -38,6 +38,21 @@ describe('geocode', function () {
 			geocode.options.secure.should.equals(false);
 			geocode.options.apikey.should.equals('testing');
 		});
+
+		it ('should return HTTP error if one occurs', function (done) {
+			var
+				geocode = geocoding.initialize({
+					apikey : 'invalid_api_key'
+				}),
+				location = '8727 148th Ave NE, Redmond, WA 98052';
+
+			geocode.get(location, function (err, data) {
+				should.exist(err);
+				should.not.exist(data);
+
+				done();
+			});
+		});
 	});
 
 	describe('#get', function () {
