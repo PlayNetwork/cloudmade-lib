@@ -2,7 +2,7 @@
 
 A node library for consuming Cloudmade APIs. Currently only supports Geocoding.
 
-[![Build Status](https://travis-ci.org/PlayNetwork/cloudmade-lib.png?branch=develop)](https://travis-ci.org/PlayNetwork/cloudmade-lib) [![Coverage Status](https://coveralls.io/repos/PlayNetwork/cloudmade-lib/badge.png?branch=develop)](https://coveralls.io/r/PlayNetwork/cloudmade-lib?branch=develop)
+[![Build Status](https://travis-ci.org/PlayNetwork/cloudmade-lib.png?branch=master)](https://travis-ci.org/PlayNetwork/cloudmade-lib) [![Coverage Status](https://coveralls.io/repos/PlayNetwork/cloudmade-lib/badge.png?branch=master)](https://coveralls.io/r/PlayNetwork/cloudmade-lib?branch=master)
 
 ## Features
 
