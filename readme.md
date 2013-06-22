@@ -111,7 +111,7 @@ The results returned from the cloudmade API are wrapped with the following field
 ```JSON
 {
 	"apikey" : "your_api_key_here",
-	"data" : {},
+	"data" : { /* Cloudmade Response Here */ },
 	"host" : "geocoding.cloudmade.com",
 	"path" : "/geocoding/v2/find.js",
 	"query" : "?query=8727%20148th%20Ave%20NE%2C%20Redmond%2C%20WA%2098052",
