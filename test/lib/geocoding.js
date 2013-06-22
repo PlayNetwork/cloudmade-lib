@@ -41,7 +41,7 @@ describe('geocode', function () {
 	});
 
 	describe('#execRequest', function () {
-		it ('should return HTTP error if one occurs', function (done) {
+		it ('should return error if key is invalid', function (done) {
 			var
 				geocode = geocoding.initialize({
 					apikey : 'invalid_api_key'
@@ -61,6 +61,22 @@ describe('geocode', function () {
 
 			geocode.get(null, function (err, data) {
 				should.exist(err);
+				should.not.exist(data);
+
+				done();
+			});
+		});
+
+		it ('should return HTTP error if one occurs', function (done) {
+			var
+				geocode = geocoding.initialize({
+					host : 'invalidhost.testing'
+				}),
+				location = '8727 148th Ave NE, Redmond, WA 98052';
+
+			geocode.get(location, function (err, data) {
+				should.exist(err);
+				err.statusCode.should.equals(404);
 				should.not.exist(data);
 
 				done();
