@@ -173,6 +173,28 @@ describe('geocode', function () {
 				done();
 			});
 		});
+
+		it ('should support optional parameters on request', function (done) {
+			var
+				geocode = geocoding.initialize({
+					apikey : apikey
+				}),
+				location = {
+					city : 'Redmond'
+				},
+				options = {
+					results : 100
+				};
+
+			geocode.get(options, location, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+				data.data.found.should.not.equals(0);
+				data.query.indexOf('&results=100').should.not.equals(-1);
+
+				done();
+			});
+		});
 	});
 
 	describe('#get', function () {

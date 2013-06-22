@@ -35,6 +35,11 @@ geocoding.get('8727 148th Ave NE, Redmond, WA 98052', function (err, data) {
 });
 ```
 
+### Optional Parameters
+
+<http://developers.cloudmade.com/projects/show/geocoding-http-api#Parameters>
+
+
 ### Response Data
 
 ```JSON

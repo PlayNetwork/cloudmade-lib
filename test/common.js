@@ -12,5 +12,6 @@ global.requireWithCoverage = function (libName) {
 	}
 };
 
+
 var chai = require('chai');
 global.should = chai.should();
