@@ -23,7 +23,7 @@ To retrieve results in JSON format, see the following example:
 
 ```Javascript
 var
-	cloudmade = require('cloudmade'),
+	cloudmade = require('cloudmade-lib'),
 	geocoding = cloudmade.geocoding.initialize({
 		apikey : 'your_api_key_here'
 	});
@@ -39,7 +39,7 @@ To retrieve results in GeoJSON format, see the following example:
 
 ```Javascript
 var
-	cloudmade = require('cloudmade'),
+	cloudmade = require('cloudmade-lib'),
 	geocoding = cloudmade.geocoding.initialize({
 		apikey : 'your_api_key_here'
 	});
@@ -55,7 +55,7 @@ To retrieve results in Plist format, see the following example:
 
 ```Javascript
 var
-	cloudmade = require('cloudmade'),
+	cloudmade = require('cloudmade-lib'),
 	geocoding = cloudmade.geocoding.initialize({
 		apikey : 'your_api_key_here'
 	});
@@ -71,7 +71,7 @@ To retrieve results in HTML format, see the following example:
 
 ```Javascript
 var
-	cloudmade = require('cloudmade'),
+	cloudmade = require('cloudmade-lib'),
 	geocoding = cloudmade.geocoding.initialize({
 		apikey : 'your_api_key_here'
 	});
@@ -87,7 +87,7 @@ Additional parameters, as outlined at <http://developers.cloudmade.com/projects/
 
 ```Javascript
 var
-	cloudmade = require('cloudmade'),
+	cloudmade = require('cloudmade-lib'),
 	geocoding = cloudmade.geocoding.initialize({
 		apikey : 'your_api_key_here'
 	}),
