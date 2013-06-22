@@ -1,0 +1,159 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.2.30
+3 info using node@v0.10.11
+4 verbose publish [ '.' ]
+5 verbose read json /Users/jthomas/Projects/cloudmade-lib/package.json
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/jthomas/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz
+14 verbose folder .
+15 info prepublish cloudmade-lib@0.1.1
+16 silly lockFile 1f1177db-tar tar://.
+17 verbose lock tar://. /Users/jthomas/.npm/1f1177db-tar.lock
+18 silly lockFile 162150f6-16580-0-5030862686689943-tmp-tgz tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz
+19 verbose lock tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz /Users/jthomas/.npm/162150f6-16580-0-5030862686689943-tmp-tgz.lock
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 1f1177db-tar tar://.
+22 silly lockFile 162150f6-16580-0-5030862686689943-tmp-tgz tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz
+23 silly lockFile 162150f6-16580-0-5030862686689943-tmp-tgz tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz
+24 verbose tar unpack /var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz
+25 silly lockFile 52a5c739-16580-0-5030862686689943-package tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package
+26 verbose lock tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package /Users/jthomas/.npm/52a5c739-16580-0-5030862686689943-package.lock
+27 silly lockFile 162150f6-16580-0-5030862686689943-tmp-tgz tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz
+28 verbose lock tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz /Users/jthomas/.npm/162150f6-16580-0-5030862686689943-tmp-tgz.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 silly gunzTarPerm extractEntry package.json
+31 silly gunzTarPerm extractEntry .npmignore
+32 silly gunzTarPerm extractEntry LICENSE
+33 silly gunzTarPerm extractEntry history.md
+34 silly gunzTarPerm extractEntry .coveralls.yml
+35 silly gunzTarPerm extractEntry .jshintrc
+36 silly gunzTarPerm extractEntry lib/geocoding.js
+37 silly gunzTarPerm extractEntry lib/index.js
+38 silly gunzTarPerm extractEntry readme.md
+39 silly gunzTarPerm extractEntry .travis.yml
+40 silly gunzTarPerm extractEntry test/common.js
+41 silly gunzTarPerm extractEntry test/lib/geocoding.js
+42 verbose read json /var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package/package.json
+43 silly lockFile 52a5c739-16580-0-5030862686689943-package tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package
+44 silly lockFile 52a5c739-16580-0-5030862686689943-package tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package
+45 silly lockFile 162150f6-16580-0-5030862686689943-tmp-tgz tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz
+46 silly lockFile 162150f6-16580-0-5030862686689943-tmp-tgz tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/tmp.tgz
+47 verbose from cache /var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package/package.json
+48 verbose tar pack [ '/Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz',
+48 verbose tar pack   '/var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package' ]
+49 verbose tarball /Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz
+50 verbose folder /var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package
+51 silly lockFile 52a5c739-16580-0-5030862686689943-package tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package
+52 verbose lock tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package /Users/jthomas/.npm/52a5c739-16580-0-5030862686689943-package.lock
+53 silly lockFile 36e90c4e--cloudmade-lib-0-1-1-package-tgz tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz
+54 verbose lock tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz /Users/jthomas/.npm/36e90c4e--cloudmade-lib-0-1-1-package-tgz.lock
+55 silly lockFile 52a5c739-16580-0-5030862686689943-package tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package
+56 silly lockFile 52a5c739-16580-0-5030862686689943-package tar:///var/folders/tx/bzgpf1rx4mn23g_f0pvp1d3w0000gp/T/npm-51041/1371869216580-0.5030862686689943/package
+57 silly lockFile 36e90c4e--cloudmade-lib-0-1-1-package-tgz tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz
+58 silly lockFile 36e90c4e--cloudmade-lib-0-1-1-package-tgz tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz
+59 silly lockFile 1f699d94--npm-cloudmade-lib-0-1-1-package /Users/jthomas/.npm/cloudmade-lib/0.1.1/package
+60 verbose lock /Users/jthomas/.npm/cloudmade-lib/0.1.1/package /Users/jthomas/.npm/1f699d94--npm-cloudmade-lib-0-1-1-package.lock
+61 silly lockFile 1f699d94--npm-cloudmade-lib-0-1-1-package /Users/jthomas/.npm/cloudmade-lib/0.1.1/package
+62 silly lockFile 1f699d94--npm-cloudmade-lib-0-1-1-package /Users/jthomas/.npm/cloudmade-lib/0.1.1/package
+63 verbose tar unpack /Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz
+64 silly lockFile b6c2b14c--npm-cloudmade-lib-0-1-1-package tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package
+65 verbose lock tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package /Users/jthomas/.npm/b6c2b14c--npm-cloudmade-lib-0-1-1-package.lock
+66 silly lockFile 36e90c4e--cloudmade-lib-0-1-1-package-tgz tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz
+67 verbose lock tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz /Users/jthomas/.npm/36e90c4e--cloudmade-lib-0-1-1-package-tgz.lock
+68 silly gunzTarPerm modes [ '755', '644' ]
+69 silly gunzTarPerm extractEntry package.json
+70 silly gunzTarPerm extractEntry .npmignore
+71 silly gunzTarPerm extractEntry LICENSE
+72 silly gunzTarPerm extractEntry .coveralls.yml
+73 silly gunzTarPerm extractEntry .jshintrc
+74 silly gunzTarPerm extractEntry .travis.yml
+75 silly gunzTarPerm extractEntry history.md
+76 silly gunzTarPerm extractEntry lib/geocoding.js
+77 silly gunzTarPerm extractEntry lib/index.js
+78 silly gunzTarPerm extractEntry readme.md
+79 silly gunzTarPerm extractEntry test/common.js
+80 silly gunzTarPerm extractEntry test/lib/geocoding.js
+81 verbose read json /Users/jthomas/.npm/cloudmade-lib/0.1.1/package/package.json
+82 silly lockFile b6c2b14c--npm-cloudmade-lib-0-1-1-package tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package
+83 silly lockFile b6c2b14c--npm-cloudmade-lib-0-1-1-package tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package
+84 silly lockFile 36e90c4e--cloudmade-lib-0-1-1-package-tgz tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz
+85 silly lockFile 36e90c4e--cloudmade-lib-0-1-1-package-tgz tar:///Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz
+86 verbose from cache /Users/jthomas/.npm/cloudmade-lib/0.1.1/package/package.json
+87 verbose chmod /Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz 644
+88 verbose chown /Users/jthomas/.npm/cloudmade-lib/0.1.1/package.tgz [ 502, 20 ]
+89 silly lockFile 3a52ce78- .
+90 silly lockFile 3a52ce78- .
+91 silly publish { name: 'cloudmade-lib',
+91 silly publish   description: 'a client library for cloudmade geocode API',
+91 silly publish   private: false,
+91 silly publish   version: '0.1.1',
+91 silly publish   author: { name: 'Joshua Thomas', email: 'jthomas@playnetwork.com' },
+91 silly publish   engine: 'node >= 0.8.0',
+91 silly publish   keywords: [ 'cloudemade', 'geocode', 'geocoding' ],
+91 silly publish   repository:
+91 silly publish    { type: 'git',
+91 silly publish      url: 'ssh://git@github.org:PlayNetwork/cloudmade-lib.git' },
+91 silly publish   main: './lib',
+91 silly publish   scripts:
+91 silly publish    { pretest: 'jshint lib/*.js test/*.js ; rm -rf lib-cov ; jscoverage lib lib-cov',
+91 silly publish      test: 'mocha --check-leaks -R spec -r ./test/common.js ./test/lib',
+91 silly publish      posttest: 'CLOUDMADE_LIB_COVERAGE=true mocha -R mocha-lcov-reporter -r ./test/common.js ./test/lib | ./node_modules/coveralls/bin/coveralls.js',
+91 silly publish      coverage: 'rm -rf reports ; mkdir -p reports ; CLOUDMADE_LIB_COVERAGE=true mocha -R html-cov -r ./test/common.js ./test/lib > reports/coverage.html' },
+91 silly publish   devDependencies:
+91 silly publish    { chai: '*',
+91 silly publish      coveralls: '*',
+91 silly publish      jscoverage: '*',
+91 silly publish      jshint: '*',
+91 silly publish      mocha: '*',
+91 silly publish      'mocha-lcov-reporter': '*' },
+91 silly publish   readme: '# Cloudmade Lib\n\nA node library for consuming Cloudmade APIs. Currently only supports Geocoding.\n\n[![Build Status](https://travis-ci.org/PlayNetwork/cloudmade-lib.png?branch=master)](https://travis-ci.org/PlayNetwork/cloudmade-lib) [![Coverage Status](https://coveralls.io/repos/PlayNetwork/cloudmade-lib/badge.png?branch=master)](https://coveralls.io/r/PlayNetwork/cloudmade-lib?branch=master)\n\n## Features\n\n* Geocoding\n\t* Output types for JSON, GeoJSON, Property list and HTML\n\n## Install\n\n```Bash\nnpm install cloudmade-lib\n```\n\n## Usage\n\n### JSON\n\nTo retrieve results in JSON format, see the following example:\n\n```Javascript\nvar\n\tcloudmade = require(\'cloudmade\'),\n\tgeocoding = cloudmade.geocoding.initialize({\n\t\tapikey : \'your_api_key_here\'\n\t});\n\ngeocoding.get(\'8727 148th Ave NE, Redmond, WA 98052\', function (err, data) {\n\t// work with results here...\n});\n```\n\n### GeoJSON\n\nTo retrieve results in GeoJSON format, see the following example:\n\n```Javascript\nvar\n\tcloudmade = require(\'cloudmade\'),\n\tgeocoding = cloudmade.geocoding.initialize({\n\t\tapikey : \'your_api_key_here\'\n\t});\n\ngeocoding.getGeo(\'8727 148th Ave NE, Redmond, WA 98052\', function (err, data) {\n\t// work with results here...\n});\n```\n\n### Propert list\n\nTo retrieve results in Plist format, see the following example:\n\n```Javascript\nvar\n\tcloudmade = require(\'cloudmade\'),\n\tgeocoding = cloudmade.geocoding.initialize({\n\t\tapikey : \'your_api_key_here\'\n\t});\n\ngeocoding.getPlist(\'8727 148th Ave NE, Redmond, WA 98052\', function (err, data) {\n\t// work with results here...\n});\n```\n\n### HTML\n\nTo retrieve results in HTML format, see the following example:\n\n```Javascript\nvar\n\tcloudmade = require(\'cloudmade\'),\n\tgeocoding = cloudmade.geocoding.initialize({\n\t\tapikey : \'your_api_key_here\'\n\t});\n\ngeocoding.getHtml(\'8727 148th Ave NE, Redmond, WA 98052\', function (err, data) {\n\t// work with results here...\n});\n```\n\n### Optional Parameters\n\nAdditional parameters, as outlined at <http://developers.cloudmade.com/projects/show/geocoding-http-api#Parameters>, can be supplied easily during the request.\n\n```Javascript\nvar\n\tcloudmade = require(\'cloudmade\'),\n\tgeocoding = cloudmade.geocoding.initialize({\n\t\tapikey : \'your_api_key_here\'\n\t}),\n\toptions = {\n\t\taround : \'47.6742,122.1203\'\n\t\tresults : 100,\n\t\tskip : 100\n\t};\n\ngeocoding.get(options, \'8727 148th Ave NE, Redmond, WA 98052\', function (err, data) {\n\t// work with results here...\n});\n```\n\n### Response Data\n\nThe results returned from the cloudmade API are wrapped with the following fields:\n\n```JSON\n{\n\t"apikey" : "your_api_key_here",\n\t"data" : { /* Cloudmade Response Here */ },\n\t"host" : "geocoding.cloudmade.com",\n\t"path" : "/geocoding/v2/find.js",\n\t"query" : "?query=8727%20148th%20Ave%20NE%2C%20Redmond%2C%20WA%2098052",\n\t"secure" : false\n}\n```\n\nFor more information about cloudmade\'s response data: <http://developers.cloudmade.com/projects/show/geocoding-http-api#Geocoding-responses>\n\n## License\n\nMIT, see LICENSE',
+91 silly publish   readmeFilename: 'readme.md',
+91 silly publish   _id: 'cloudmade-lib@0.1.1',
+91 silly publish   dist: { shasum: 'd48555917b5ec31fe38c1c9a7e49ede8c07171b7' },
+91 silly publish   _from: '.' }
+92 verbose url raw cloudmade-lib
+93 verbose url resolving [ 'https://registry.npmjs.org/', './cloudmade-lib' ]
+94 verbose url resolved https://registry.npmjs.org/cloudmade-lib
+95 info trying registry request attempt 1 at 19:46:56
+96 http PUT https://registry.npmjs.org/cloudmade-lib
+97 http 409 https://registry.npmjs.org/cloudmade-lib
+98 verbose url raw cloudmade-lib
+99 verbose url resolving [ 'https://registry.npmjs.org/', './cloudmade-lib' ]
+100 verbose url resolved https://registry.npmjs.org/cloudmade-lib
+101 info trying registry request attempt 1 at 19:46:57
+102 http GET https://registry.npmjs.org/cloudmade-lib
+103 http 200 https://registry.npmjs.org/cloudmade-lib
+104 error publish fail Cannot publish over existing version.
+104 error publish fail Update the 'version' field in package.json and try again.
+104 error publish fail
+104 error publish fail If the previous version was published in error, see:
+104 error publish fail     npm help unpublish
+104 error publish fail
+104 error publish fail To automatically increment version numbers, see:
+104 error publish fail     npm help version
+105 error System Darwin 12.4.0
+106 error command "node" "/usr/local/bin/npm" "publish"
+107 error cwd /Users/jthomas/Projects/cloudmade-lib
+108 error node -v v0.10.11
+109 error npm -v 1.2.30
+110 error code EPUBLISHCONFLICT
+111 verbose exit [ 1, true ]
