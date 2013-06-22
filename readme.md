@@ -11,8 +11,6 @@ A node library for consuming Cloudmade APIs. Currently only supports Geocoding.
 
 ## Install
 
-This module is currently under development and has not been published to NPM yet.
-
 ```Bash
 npm install cloudmade-lib
 ```
