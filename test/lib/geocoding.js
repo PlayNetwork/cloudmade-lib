@@ -84,6 +84,7 @@ describe('geocode', function () {
 			geocode.get(location, function (err, data) {
 				should.not.exist(err);
 				should.exist(data);
+				data.data.found.should.not.equals(0);
 
 				var queryItems = data.query.substring(7, data.query.length - 1).split(';');
 				queryItems.should.have.length(5);
@@ -105,6 +106,29 @@ describe('geocode', function () {
 			geocode.get(location, function (err, data) {
 				should.not.exist(err);
 				should.exist(data);
+				data.data.found.should.not.equals(0);
+
+				var queryItems = data.query.substring(7, data.query.length - 1).split(';');
+				queryItems.should.have.length(2);
+
+				done();
+			});
+		});
+
+		it ('should properly handle county', function (done) {
+			var
+				geocode = geocoding.initialize({
+					apikey : apikey
+				}),
+				location = {
+					county : 'King',
+					country : 'US'
+				};
+
+			geocode.get(location, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+				data.data.found.should.not.equals(0);
 
 				var queryItems = data.query.substring(7, data.query.length - 1).split(';');
 				queryItems.should.have.length(2);
@@ -125,6 +149,7 @@ describe('geocode', function () {
 			geocode.get(location, function (err, data) {
 				should.not.exist(err);
 				should.exist(data);
+				data.data.found.should.not.equals(0);
 
 				done();
 			});
