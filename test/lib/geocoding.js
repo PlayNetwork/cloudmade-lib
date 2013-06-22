@@ -136,6 +136,27 @@ describe('geocode', function () {
 				done();
 			});
 		});
+
+		it ('should support postcode', function (done) {
+			var
+				geocode = geocoding.initialize({
+					apikey : apikey
+				}),
+				location = {
+					postcode : '98052'
+				};
+
+			geocode.get(location, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+				data.data.found.should.not.equals(0);
+
+				var queryItems = data.query.substring(7, data.query.length - 1).split(';');
+				queryItems.should.have.length(1);
+
+				done();
+			});
+		});
 	});
 
 	describe('#get', function () {
