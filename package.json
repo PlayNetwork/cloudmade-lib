@@ -2,7 +2,7 @@
 	"name" : "cloudmade-lib",
 	"description" : "a client library for cloudmade geocode API",
 	"private" : false,
-	"version" : "0.1.3",
+	"version" : "0.1.4",
 	"author" : "Joshua Thomas <jthomas@playnetwork.com>",
 	"engine" : "node >= 0.8.0",
 	"keywords" : ["cloudemade", "geocode", "geocoding"],

@@ -33,6 +33,22 @@ geocoding.get('8727 148th Ave NE, Redmond, WA 98052', function (err, data) {
 });
 ```
 
+### Timeout for Execution
+
+By default, the timeout for connecting to the Cloudmade API is 5 seconds. This can be overridden via the options parameter which accepts a value in milliseconds.
+
+``` Javascript
+var
+	cloudmade = require('cloudmade-lib'),
+	geocoding = cloudmade.geocoding.initialize({
+		apikey : 'your_api_key_here'
+	});
+
+geocoding.get({ timeout : 10000 }, '8727 148th Ave NE, Redmond, WA 98052', function (err, data) {
+	// work with results here...
+});
+```
+
 ### GeoJSON
 
 To retrieve results in GeoJSON format, see the following example:

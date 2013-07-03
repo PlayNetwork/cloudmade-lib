@@ -12,3 +12,8 @@
 
 * fixed typo in documentation
 * fixed bug in index.js lib reference
+
+
+# 0.1.4 / 2013-07-03
+
+* adding support for timeout of connection to Cloudmade API
